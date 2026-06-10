@@ -453,6 +453,7 @@ Error: unexpected symbol in "1. Graph"
 +      col = "skyblue", 
 +      border = "white")
 > 
+
 > hist
 function (x, ...) 
 UseMethod("hist")
@@ -724,3 +725,15 @@ UseMethod("hist")
 40            27.000000
 41            45.000000
 42            68.000000
+
+Graph for Q3: Top 5 Discounted Categories (Bar Plot)
+arplot(top5_cat$discount_percentage, 
+        names.arg = substr(top5_cat$category, 1, 20),
+        las = 2, 
+        col = "lightgreen", 
+        main = "Top 5 Categories with Highest Average Discount",
+        ylab = "Avg Discount %")
+
+
+
+
